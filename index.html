@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <h1> Welcome to Rock, Paper, Scissors!</h1>
+    <section class="username">
+    <h2>Enter Username Below</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" id="user" name="username" placeholder="type here" />
+    <button id="submit">Confirm</button>
+    
+    <h1><span id="currentUser"></span>Choose Your Weapon</h1>
+  </section>
+    <section class="buttons"></section>
+      <article class="buttons-article">
+        <button id="rock" class="choice"></button>
+        <button id="paper" class="choice"></button>
+        <button id="scissors" class="choice"></button>
+      </article>
+      <article class="game-state">
+        <p>
+          <span id="userChoice">User</span>'s Choice:
+          <span id="playerchoice"></span>
+        </p>
+        <p>Computer Choice: <span id="computerMove"></span></p>
+        <p class="result">Result: <span id="results"></span></p>
+      </article>
+      <section class="scoreboard">
+      <h1>Scoreboard</h1>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+    </section>
+      <section class="gamehistory">
+        <h2>Previous Games</h2>
+        <ol id="gameHistory"></ol>
+      </section>
+    </section>
+    <script src="rps.js"></script>
+  </body>
+</html>
